@@ -84,3 +84,4 @@ inoremap <F12> <Esc>:set list!<CR>a
 map <C-o> :NERDTreeTabsToggle<CR>
 " show hidden NERDTree files
 let NERDTreeShowHidden=1
+
