@@ -8,13 +8,13 @@ call vundle#begin('~/.vim/plugins')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'surround.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'nightsense/snow'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Raimondi/delimitMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,9 +43,11 @@ set fileencoding=utf-8
 " edit
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set nojoinspaces
 set nu
 set autoindent
+set cindent
 set colorcolumn=100
 
 " search
@@ -86,3 +88,8 @@ map <C-o> :NERDTreeTabsToggle<CR>
 " show hidden NERDTree files
 let NERDTreeShowHidden=1
 
+"inoremap {<CR> {<CR>}<C-o>==<C-o>O
+"inoremap {{ <CR>{<CR>}<C-o>==<C-o>O
+let g:delimitMate_expand_cr=1
+let g:delimitMate_expand_space=1
+inoremap { {<CR>}<up><end><CR>
