@@ -11,6 +11,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'surround.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'nightsense/snow'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,6 +54,7 @@ set nohlsearch
 set belloff=all
 
 set background=dark
+colorscheme snow
 syntax enable
 
 " enter on cmd mode for new line
@@ -77,6 +81,6 @@ noremap <F12> :set list!<CR>
 inoremap <F12> <Esc>:set list!<CR>a
 
 " Ctrl+O for NERDTree toggle
-map <C-o> :NERDTreeToggle<CR>
+map <C-o> :NERDTreeTabsToggle<CR>
 " show hidden NERDTree files
 let NERDTreeShowHidden=1
