@@ -1,11 +1,14 @@
+" display
 set encoding=utf-8
 set ruler
 set showmatch
 set showmode
 
+" files
 set confirm
 set fileencoding=utf-8
 
+" edit
 set tabstop=4
 set softtabstop=4
 set nojoinspaces
@@ -13,8 +16,10 @@ set nu
 set autoindent
 set colorcolumn=100
 
+" search
 set nohlsearch
 
+" sounds
 set belloff=all
 
 filetype on
