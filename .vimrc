@@ -10,6 +10,7 @@ call vundle#begin('~/.vim/plugins')
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'surround.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -74,3 +75,8 @@ inoremap <F8> <Esc>:nohl<CR>a
 " press F12 to toggle showing the non-printable charactes
 noremap <F12> :set list!<CR>
 inoremap <F12> <Esc>:set list!<CR>a
+
+" Ctrl+O for NERDTree toggle
+map <C-o> :NERDTreeToggle<CR>
+" show hidden NERDTree files
+let NERDTreeShowHidden=1
