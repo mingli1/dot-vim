@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mattn/emmet-vim'
+Plugin 'cocopon/iceberg.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,7 +59,7 @@ set nohlsearch
 set belloff=all
 
 set background=dark
-colorscheme snow
+colorscheme iceberg
 syntax enable
 
 " enter on cmd mode for new line
