@@ -44,8 +44,8 @@ set fileencoding=utf-8
 
 " edit
 set tabstop=4
-set softtabstop=4
 set shiftwidth=4
+set expandtab
 set nojoinspaces
 set nu
 set autoindent
@@ -110,7 +110,7 @@ function! Expander()
 
     else
       return "\<CR>"
-
+    
     endif
 
   else
