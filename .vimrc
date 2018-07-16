@@ -18,6 +18,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'LucHermitte/lh-vim-lib'
 Plugin 'LucHermitte/lh-brackets'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
