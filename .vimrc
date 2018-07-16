@@ -19,6 +19,8 @@ Plugin 'cocopon/iceberg.vim'
 Plugin 'LucHermitte/lh-vim-lib'
 Plugin 'LucHermitte/lh-brackets'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -119,3 +121,6 @@ if exists('$TMUX')
     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 endif
+
+" airline theme
+let g:airline_theme='distinguished'
