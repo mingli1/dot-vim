@@ -30,6 +30,14 @@ filetype plugin indent on    " required
 " :PluginUpdate
 " " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
@@ -78,6 +86,10 @@ inoremap <F4> <Esc>mqggVG=`qzza
 vnoremap <F5> :sort i<CR>
 nnoremap <F5> Vip:sort i<CR>
 
+" press F8 to turn the search results highlight off
+noremap <F8> :nohl<CR>
+inoremap <F8> <Esc>:nohl<CR>a
+
 " press F12 to toggle showing the non-printable charactes
 noremap <F12> :set list!<CR>
 inoremap <F12> <Esc>:set list!<CR>a
@@ -87,6 +99,8 @@ map <C-o> :NERDTreeTabsToggle<CR>
 " show hidden NERDTree files
 let NERDTreeShowHidden=1
 
+"inoremap {<CR> {<CR>}<C-o>==<C-o>O
+"inoremap {{ <CR>{<CR>}<C-o>==<C-o>O
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
 inoremap { {<CR>}<up><end><CR>
