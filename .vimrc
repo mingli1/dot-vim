@@ -16,6 +16,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mattn/emmet-vim'
 Plugin 'cocopon/iceberg.vim'
+Plugin 'LucHermitte/lh-vim-lib'
+Plugin 'LucHermitte/lh-brackets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,7 +84,6 @@ let NERDTreeShowHidden=1
 "inoremap {{ <CR>{<CR>}<C-o>==<C-o>O
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
-inoremap { {<CR>}<up><end><CR>
 
 let g:user_emmet_leader_key='<C-Z>'
 function! Expander()
@@ -104,3 +105,5 @@ function! Expander()
 endfunction
 
 inoremap <expr> <CR> Expander()
+
+let b:usemarks=0
