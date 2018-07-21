@@ -46,6 +46,9 @@ set autoindent
 set cindent
 set colorcolumn=100
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+nnoremap <expr> M (line('$')/2).'G'
+xnoremap <expr> M (line('$')/2).'G'
+onoremap <expr> M (line('$')/2).'G'
 
 " search
 set nohlsearch
