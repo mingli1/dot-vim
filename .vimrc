@@ -11,9 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'surround.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'nightsense/snow'
 Plugin 'airblade/vim-gitgutter'
-"Plugin 'Raimondi/delimitMate'
 Plugin 'mattn/emmet-vim'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'LucHermitte/lh-vim-lib'
@@ -22,6 +20,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mkitt/tabline.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,11 +87,6 @@ inoremap <F12> <Esc>:set list!<CR>a
 map <C-o> :NERDTreeTabsToggle<CR>
 " show hidden NERDTree files
 let NERDTreeShowHidden=1
-
-"inoremap {<CR> {<CR>}<C-o>==<C-o>O
-"inoremap {{ <CR>{<CR>}<C-o>==<C-o>O
-"let g:delimitMate_expand_cr=1
-"let g:delimitMate_expand_space=1
 
 let g:user_emmet_leader_key='<C-Z>'
 function! Expander()
